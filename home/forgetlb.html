@@ -1,0 +1,33 @@
+
+<div class="container-fluid" style="margin-top: 20px; ">
+	<div class="row">
+		<div class="col-lg-12">
+			<form action="forgot.php">
+				<legend>Forgot Password</legend>
+				<div class="form-group">
+					<label for="nome" class="sr-only">Username:</label>
+					<input type="text" id="nome" class="form-control" placeholder="Username" name="txtuser">
+				</div>
+				<div class="form-group">
+                                    <label for="assunto" class="sr-only">Select your Security Question:</label>
+					<select name="securityque">
+                                <option value="0">--Security Question--</option>
+                                <option value="1">My favorite school teacher?</option>
+                                <option value="2">My first Phone: </option>
+                                <option value="3">My favorite Destination:</option>
+                                <option value="4">My biggest dream:</option>
+                                <option value="5">My Inspiration:</option>
+                            </select>
+				</div>
+				<div class="form-group">
+					<input type="text" id="nome" class="form-control" placeholder="Your Answer" name="txtans">
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block" name="btnsave">Submit</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>

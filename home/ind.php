@@ -1,0 +1,122 @@
+<!DocType>
+<html>
+<head>
+<title>Basics of Jquery</title>
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+*
+{
+margin:0;
+padding:0;
+}
+#slide
+{
+width:100%;
+height:60px;
+background-color:#000000;
+color:#ffffff;
+text-align:center;
+padding:5px;
+font-weight:bold;
+font-size:24px;
+}
+#slide:hover
+{
+cursor:pointer;
+}
+#panel
+{
+background-color:rgb(246,72,112);
+width:100%;
+height:30px;
+border-bottom:2px solid #ff0000;
+display:none;
+}
+#menu
+{
+width:700px;
+margin:0 auto;
+height: 250px;
+
+}
+#menu ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+font-size:20px;
+font-family:'Times New Roman';
+}
+
+#menu ul li
+{
+float:left;
+
+position:relative;
+}
+#menu ul li a
+{
+background-color:#0000;
+display:block;
+padding:5px 15px 5px 15px;
+margin:2px;
+color:#ffffff;
+text-decoration:none;
+}
+#menu ul li a:hover
+{
+text-decoration:underline;
+text-shadow:0 0 20px #ffffff;
+background:#ffffff;
+color:#666666;
+ transition: transform 2s;
+}
+
+#menu li:hover ul
+{
+display:block;
+position:absolute;
+transition: transform 2s;
+}
+ #menu li ul
+ {
+ display:none;
+ width:150px;
+ }
+ #menu li ul li
+ {
+ background-color:#000000;
+ width:150px;
+ }
+
+</style>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#slide").click(function(){
+$("#panel").slideToggle(1000);
+});
+});
+</script>
+</head>
+<body>
+<div id="slide"> Company 
+<!--<img src="img/xyz.png" style="float:right;"/>-->
+    <a href="#" style="float:right" ><i class="fa fa-bars" aria-hidden="true"></i>
+    </a>
+</div>
+<div id="panel">
+
+<div id="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li id="delay1"><a href="#">Profile</a>
+		
+		</li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">About</a></li>
+	</ul>
+</div>
+</div>
+</body>
+</html>
